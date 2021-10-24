@@ -9,4 +9,6 @@ function draw() {
   ellipse(x,50,80,80);
 }
 
+console.log("the script file is loading");
+
 x++;
