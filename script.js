@@ -33,6 +33,7 @@ function nStuff() {
     abc++;
   }
   ellipse(mouseX,mouseY,20,20);
+  ellipse(mouseX-60,mouseY+5,26,10);
 }
 
-console.log("version 1.5");
+console.log("version 1.6");
