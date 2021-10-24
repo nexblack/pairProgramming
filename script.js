@@ -10,4 +10,9 @@ function draw() {
   x++;
 }
 
+if(x > 400) {
+  x = 5;
+}
+
+
 console.log("version 1.1");
