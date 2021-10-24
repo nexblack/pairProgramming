@@ -3,6 +3,7 @@ function setup() {
 }
 
 var x = 30;
+var y = 30;
 
 function draw() {
   background(220);
@@ -11,13 +12,14 @@ function draw() {
 }
 
 function clareStuff() {
-  ellipse(x,30,30,30);
+  ellipse(x,y,30,30);
   x++;
+  y++;
 
   if(x > 400) {
     x = 1;
   }
-text("hello test",50,50);
+text('hello test',100,100);
 }
 
 var abc = 0;
@@ -30,9 +32,7 @@ function nStuff() {
     console.log("in theory each of these should only run 1 time");
     abc++;
   }
-  for(var i =0;i<50;i++) {
-    ellipse(i*5,i*3,5,3);
-  }
+  ellipse(mouseX,mouseY,20,20);
 }
 
-console.log("version 1.4");
+console.log("version 1.5");
