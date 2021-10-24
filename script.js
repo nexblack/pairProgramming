@@ -15,4 +15,4 @@ if(x > 400) {
 }
 
 
-console.log("version 1.1");
+console.log("version 1.2");
