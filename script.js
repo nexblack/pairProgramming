@@ -10,4 +10,4 @@ function draw() {
   x++;
 }
 
-console.log("the script file is loading");
+console.log("version 1.1");
