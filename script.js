@@ -14,7 +14,7 @@ var billybob = [0,155,255];
 
 function nStuff() {
   if(mouseX < 100) {
-    background(billbob[0]);
+    background(billybob[0]);
   } else if (mouseX > 100 && mouseX < 300) {
     background(billybob[1]);
   } else {
