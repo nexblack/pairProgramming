@@ -12,15 +12,7 @@ function draw() {
 
 function clareStuff() {
   stroke(0);
-//head
-  ellipse(100,100,150,150);
-//eyes
-  ellipse(100,80,50,50);
-  ellipse(130,80,50,50);
-//mouth
-  ellipse(110,120,40,40);
-//line experiment
-line(mouseX,0,mouseX,100);
+ellipse(mouseX,mouseY,50,50);
 
 }
 
@@ -42,4 +34,4 @@ function nStuff() {
   }
 }
 
-console.log("version 1.9");
+console.log("version 1.10");
