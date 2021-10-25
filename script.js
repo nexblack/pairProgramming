@@ -11,6 +11,7 @@ function draw() {
 }
 
 function clareStuff() {
+  stroke(0);
 //head
   ellipse(100,100,150,150);
 //eyes
@@ -18,7 +19,7 @@ function clareStuff() {
   ellipse(130,80,50,50);
 //mouth
   ellipse(110,120,40,40);
-//talking mouth command
+//line experiment
 line(mouseX,0,mouseX,100);
 
 }
