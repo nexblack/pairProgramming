@@ -7,31 +7,24 @@ function draw() {
   background(220);
     clareStuff();
     nStuff();
-
 }
 
-function clareStuff() {
-  stroke(0);
-ellipse(mouseX,mouseY,50,50);
-
-}
+var billybob = [0,155,255];
 
 
-
-var ballY = 100;
-var ballV = 5;
 function nStuff() {
-  noStroke();
-  fill(255);
-  rect(200,0,200,400);
-  fill(255,0,0);
-  ellipse(300,ballY,50,50);
-  ballY += ballV;
-  ballV += 0.13;
-  if(ballY > 375) {
-    ballV = -ballV;
-    ballV += 0.5;
+  if(mouseX < 100) {
+    background(billbob[0]);
+  } else if (mouseX > 100 && mouseX < 300) {
+    background(billybob[1]);
+  } else {
+    background(billybob[2]);
   }
 }
 
-console.log("version 1.10");
+function clareStuff() {
+
+}
+
+
+console.log("ver 2.0");
