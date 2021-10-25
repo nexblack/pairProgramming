@@ -15,7 +15,7 @@ function clareStuff() {
 //head
   ellipse(100,100,150,150);
 //eyes
-  ellipse(120,80,50,50);
+  ellipse(100,80,50,50);
   ellipse(130,80,50,50);
 //mouth
   ellipse(110,120,40,40);
@@ -32,6 +32,7 @@ function nStuff() {
   noStroke();
   fill(255);
   rect(200,0,200,400);
+  fill(255,0,0);
   ellipse(300,ballY,50,50);
   ballY += ballV;
   ballV += 0.1;
