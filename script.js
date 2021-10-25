@@ -2,38 +2,42 @@ function setup() {
   createCanvas(400, 400);
 }
 
-var x = 30;
-var y = 30;
 
 function draw() {
   background(220);
-  clareStuff();
-  nStuff();
+    clareStuff();
+    nStuff();
+
 }
+
+var w = width;
 
 function clareStuff() {
-  ellipse(x,y,30,30);
-  x++;
-  y++;
+//head
+  ellipse(100,100,150,150);
+//eyes
+  ellipse(120,80,50,50);
+  ellipse(130,80,50,50);
+//mouth
+  ellipse(110,120,40,40);
+//talking mouth command
 
-  if(x > 400) {
-    x = 1;
-  }
-text('hello test',100,100);
 }
 
-var abc = 0;
+
+
+var ballY = 100;
+var ballV = 5;
 function nStuff() {
-  if(abc == 0) {
-    console.log("WE CAN CODE LIKE THIS");
-    abc++;
+  noStroke();
+  fill(255);
+  rect(200,0,200,400);
+  ellipse(300,ballY,50,50);
+  ballY += ballV;
+  ballV += 0.1;
+  if(ballY > 375) {
+    ballV = -ballV;
   }
-  if(abc == 2) {
-    console.log("in theory each of these should only run 1 time");
-    abc++;
-  }
-  ellipse(mouseX,mouseY,20,20);
-  ellipse(mouseX-60,mouseY+5,26,10);
 }
 
-console.log("version 1.6");
+console.log("version 1.7");
