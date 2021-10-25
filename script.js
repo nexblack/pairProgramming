@@ -35,9 +35,10 @@ function nStuff() {
   fill(255,0,0);
   ellipse(300,ballY,50,50);
   ballY += ballV;
-  ballV += 0.1;
+  ballV += 0.13;
   if(ballY > 375) {
     ballV = -ballV;
+    ballV += 0.5;
   }
 }
 
