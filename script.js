@@ -41,4 +41,4 @@ function nStuff() {
   }
 }
 
-console.log("version 1.8");
+console.log("version 1.9");
