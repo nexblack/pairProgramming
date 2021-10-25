@@ -9,16 +9,24 @@ function draw() {
     nStuff();
 }
 
-var billybob = [0,155,255];
+var billybob = [
+  0,
+  155,
+  255
+];
+
+var mapp = [
+  [0,0,0,0,1],
+  [0,2,2,2,1],
+  [0,0,0,0,1],
+  [0,0,0,0,1],
+  [2,2,2,2,2]
+];
 
 
 function nStuff() {
-  if(mouseX < 100) {
-    background(billybob[0]);
-  } else if (mouseX > 100 && mouseX < 300) {
-    background(billybob[1]);
-  } else {
-    background(billybob[2]);
+  for(var i = 0;i<30;i++) {
+    ellipse(i*3,20,5,5);
   }
 }
 
@@ -27,4 +35,4 @@ function clareStuff() {
 }
 
 
-console.log("ver 2.1");
+console.log("ver 2.2");
