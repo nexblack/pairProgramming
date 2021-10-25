@@ -10,8 +10,6 @@ function draw() {
 
 }
 
-var w = width;
-
 function clareStuff() {
 //head
   ellipse(100,100,150,150);
@@ -21,6 +19,8 @@ function clareStuff() {
 //mouth
   ellipse(110,120,40,40);
 //talking mouth command
+background(244,248,252);
+line(mouseX,0,mouseX,100);
 
 }
 
